@@ -1,0 +1,144 @@
+#article_section {
+
+}
+
+#article-status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    overflow: hidden;
+    z-index: -1;
+}
+
+#article-status.nocontent,
+#article-status.loading {
+    z-index: 20;
+    top: 44px;
+}
+
+#article-status .article-statu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0;
+    background: #FFF;
+    transition: .3s;
+    z-index: 1;
+}
+
+#article-status.nocontent #article-nocontent {
+    opacity: 1;
+    z-index: 2;
+}
+
+#article-status.loading #article-loading {
+    opacity: 1;
+    z-index: 2;
+}
+
+#article-status .la-ball-fussion>div {
+    background: #999;
+    color: #999;
+    border-color: #999;
+}
+
+#article-loading>div,
+#article-nocontent>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    margin: auto;
+    height: 20%;
+
+    color: #666;
+    text-align: center;
+}
+
+#article-loading>div {
+    left: 50%;
+    margin-left: -9px;
+}
+
+#article_section article {
+    padding: 0 20px 0px;
+    overflow: hidden;
+    bottom: 0;
+}
+
+#article_section article>div {
+    padding-bottom: 100px;
+}
+
+#article_section .article-title {
+    color: #333;
+
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f6f6f6;
+    margin-bottom: 10px;
+}
+
+.art-media-cont {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #312D2D;
+    color: #fff;
+    z-index: 2;
+    overflow: hidden;
+    display: none;
+}
+
+.art-media {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.art-media p{
+    margin-top: 10px;
+}
+
+.art-main-img {
+    height: 150px;
+    margin: 15px 0 10px 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.list-start,
+.list-thu-start  {
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    right: 50%;
+    bottom: 50%;
+    margin-bottom: -23px;
+    margin-right: -23px;
+    background-image: url(../image/point.png);
+    background-size: cover;
+    background-position: center center;
+    z-index: 3;
+
+    -moz-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    transition:all .5s ease-in;
+} 
+
+.art-stop {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    background-image: url(../image/pause.png);
+}

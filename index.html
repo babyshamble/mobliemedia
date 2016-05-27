@@ -1,0 +1,88 @@
+<!DOCTYPE >
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{cityname}信息无障碍平台</title>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+        
+        <link rel="stylesheet" href="css/Jingle.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/animate.css"> 
+        <link rel="stylesheet" href="css/home.css" id="home"> 
+        <link rel="stylesheet" href="css/reader.css" id="reader">
+        <link rel="stylesheet" href="css/loaders.css">
+        <link rel="stylesheet" href="css/web.css">
+        <link rel="stylesheet" href="css/list.css" >
+        <link rel="stylesheet" href="css/article.css">
+       
+        <link rel="stylesheet" href="css/config.css">
+        <link rel="shortcut icon" href="favicon.ico">
+    </head>
+
+    <body>
+        <div id="aside_container">
+            <aside id="aside_web_system" data-position="left" data-transition="push">
+                <div class="center" id="web-sites-list"></div>
+            </aside>
+
+            <aside id="app_config" data-position="right" data-transition="push">
+                <div class="center" id="app_config_list"></div>
+            </aside>
+        </div>
+
+        <div id="section_container">
+        
+        </div>
+
+         <!-- 网站配置 谨慎操作-->
+        <div id="yx_config" style="display:none;">
+            <a href="http://wza.xinhuanet.com/yxsm/index.php?m=api&a=load&n=os&tid=1&sid=1" target="_blank" id="yx_recodownload">yx_recodownload</a>
+
+            <!-- sid lid tid -->
+            <a href="#" id="yx_sid">11956</a>
+            <a href="#" id="yx_lid">312</a>
+            <a href="#" id="yx_tid"></a>
+            
+            <!-- 语音配置 -->
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/cache/voices/voices1/" id="yx_voicespath">voices</a>
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/index.php?m=socket&a=get" id="yx_socketpath">socket</a>
+            
+            <!-- 数据配置 -->
+            <a href="/yxsm/index.php?m=translate&a=get" id="yx_translatepath">translate</a>
+            <a href="/yxsm/index.php?m=logger&a=struct" id="yx_logpath">logger</a>
+            <a href="/yxsm/index.php?m=suggest&a=index" id="yx_suggestpath">suggest</a>
+            <a href="/yxsm/index.php?m=proxy&a=show&q_url=" id="yx_proxyurl">proxy</a>
+
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/index.php?m=app&a=" router="scate" id="yx_cateurl">siteurl</a>
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/index.php?m=app&a=" router="smap" id="yx_mapurl">mapurl</a>
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/index.php?m=app&a=" router="slist" id="yx_listurl"></a>
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/index.php?m=app&a=" router="sart" id="yx_arturl">proxy</a>
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/index.php?m=app&a=" router="smore" id="yx_moreurl"></a>
+            <a href="http://wza.xinjiang.gov.cn:8086/yxsm/index.php" id="yx_searchurl"></a>
+        </div>
+        <!-- 网站配置 谨慎操作-->
+               
+        <script src="js/lib/promise-6.1.0.js"></script>
+        <script src="js/lib/zepto.js"></script>
+        <script src="js/lib/Speaker.all.js"></script>
+        <script src="js/lib/iscroll.js"></script>
+        <script src="js/lib/Jingle.js"></script>
+        <script src="js/lib/zepto.touch2mouse.js"></script>
+        <script src="js/lib/JChart.js"></script>
+        <script src="js/YDAPI/scripts/YDAPI.js"></script>
+        <script src="js/YRAPI.js"></script>
+
+        <script src="js/app/util.js"></script>
+        <script src="js/app/load.js"></script>
+        <script src="js/app/config.js"></script>
+        <script src="js/app/theme.js"></script>
+        <script src="templates/build/template.js"></script>
+        <script src="js/lib/Reader.js"></script>
+        <script src="js/app/app.js"></script>
+        <script src="js/app/article.js"></script>
+        <script src="js/app/web.js"></script>
+    </body>
+</html>
